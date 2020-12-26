@@ -8,6 +8,7 @@
     android:paddingRight="24dp"
     android:paddingLeft="24dp"
     android:orientation="vertical"
+    android:background="@color/windowBackground"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,7 +16,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/app_name"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/White"
         android:textSize="32sp" />
 
     <Space
@@ -29,6 +30,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="12sp"
+        android:textColor="@color/colorSecondaryDark"
         android:textStyle="italic"/>
 
     <Space
@@ -61,11 +63,13 @@
         android:layout_width="match_parent"
         android:layout_height="10dp" />
 
-    <Switch
+    <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/run"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/chk_run"
+        android:textColor="@color/colorSecondaryDark"
+        android:theme="@style/AppTheme"
         android:checked="true"
         android:textSize="16sp"
         android:padding="10dp" />
@@ -87,7 +91,7 @@
             android:layout_gravity="center_horizontal"
             android:padding="5dp"
             android:background="@color/colorPrimary"
-            android:textColor="@android:color/white"
+            android:textColor="@color/colorSecondaryDark"
             android:text="@string/btn_add"
             android:onClick="addRule"/>
 
@@ -102,7 +106,7 @@
             android:layout_gravity="center_horizontal"
             android:padding="5dp"
             android:background="@color/colorPrimary"
-            android:textColor="@android:color/white"
+            android:textColor="@color/colorSecondaryDark"
             android:text="@string/btn_msg"
             android:onClick="setPhoneNumber"/>
 
